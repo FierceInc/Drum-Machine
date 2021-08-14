@@ -1,0 +1,62 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161623;
+    color: White;
+   
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: #000029;
+    border: 1px solid black;
+    margin: 4px;
+    text-shadow: 0px 10px 2px blue;
+    text-align: center;
+    border: none;
+    box-shadow: 5px 7px 4px #000000;
+    border-top: 2px solid rgba(51, 51, 245, 0.3);
+    border-left: 2px solid rgba(51, 51, 245, 0.3);
+    font-weight: 600;
+    
+}
+.box:hover 
+{
+    border: none;
+    background-color: rgb(51, 51, 245);
+    box-shadow: 5px 7px 2px #395dff;
+    border-top: 2px solid rgba(17, 0, 255, 0.4);
+    border-left: 2px solid rgba(17, 0, 255, 0.4);
+    text-shadow: 0px 10px 2px #000029;
+    animation-name: box;
+    animation-duration: 0.1s;
+
+}
+.boxstyle{
+    border: none;
+    background-color: rgb(51, 51, 245);
+    box-shadow: 5px 7px 2px #395dff;
+    border-top: 2px solid rgba(17, 0, 255, 0.4);
+    border-left: 2px solid rgba(17, 0, 255, 0.4);
+    text-shadow: 0px 10px 2px #000029;
+    animation-name: box;
+    animation-duration: 0.1s;
+}
+@keyframes box {
+    0% {
+        padding: 20px;
+    }
+}
+
+.box-h {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin: auto;
+}
